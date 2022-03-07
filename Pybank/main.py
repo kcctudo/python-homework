@@ -14,7 +14,9 @@ Created on Thu Feb 24 17:31:30 2022
 """
 import pandas as pd
 import numpy as np
-budget_data_df = pd.read_csv("/Users/hannahtudo/UofT/python-homework/Pybank/budget_data.csv")
+
+# budget_data_df = pd.read_csv("/Users/hannahtudo/UofT/python-homework/Pybank/budget_data.csv")
+budget_data_df = pd.read_csv("/UofT/python-homework/Pybank/budget_data.csv")
 profit_losses_diff_df = pd.DataFrame(budget_data_df['Profit/Losses']).diff()
 profit_losses_diff_df = profit_losses_diff_df.rename(columns={"Profit/Losses": "Chg"})
 concat_df = pd.concat([budget_data_df,profit_losses_diff_df],axis=1,join="outer")
