@@ -4,8 +4,8 @@ import sys
 from pathlib import Path
 
 # @TODO: Set file paths for menu_data.csv and sales_data.csv
-menu_filepath = Path('menu_data.csv')
-sales_filepath = Path('sales_data.csv')
+menu_filepath = Path("menu_data.csv")
+sales_filepath = Path("sales_data.csv")
 
 # @TODO: Initialize list objects to hold our menu and sales data
 menu = []
